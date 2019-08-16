@@ -28,3 +28,21 @@ def reduce_mem_usage(df, verbose=True):
     end_mem = df.memory_usage().sum() / 1024**2
     if verbose: print('Mem. usage decreased to {:5.2f} Mb ({:.1f}% reduction)'.format(end_mem, 100 * (start_mem - end_mem) / start_mem))
     return df
+
+def read_and_reduce(filename):
+    df = pd.read_csv(filename)
+    return reduce_mem_usage(df)
+
+def merge_and_reduce(df1, df2, how, on):
+    df = df1.merge(df2, how='left', on=on)
+    return reduce_mem_usage(df)
+
+def check_and_drop_column(df, column):
+    if column in df.columns:
+        df.drop(columns=[column], axis=1, inplace=True)
+        
+def print_columns(df):
+    s = ''
+    for col in df.columns:
+        s += '"%s", ' % col
+    print(s[:-2])
