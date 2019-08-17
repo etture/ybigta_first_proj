@@ -17,3 +17,18 @@ YBIGTA 2019 여름방학 프로젝트
 ### 08/06
 - ID, transaction merge한 상태로 NA 값 처리
 - 준형: ID, 진우: transaction V 이외, 민태/의성: transaction V
+
+
+### 08/17
+- # YBIGTA 중간 발표 코멘트
+- 불균형 수치 조정해봐라
+	* 불균형한거 처리 안 하면 성능이 안 좋게 나올 수 있다
+	* oversampling / undersampling
+
+### 최종발표까지
+- SMOTE 로 oversampling 해보기 (민태)
+- Column 줄여야 할 것 같다 (진우, 준형)
+- F1 Score 확인하는 코드 (진우)
+- RFECV (민태)
+	--> 1, 2번 둘다 해서 XGBoost 적용까지
+- LightGBM / CatBoost (진우)
