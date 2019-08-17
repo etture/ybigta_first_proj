@@ -20,7 +20,7 @@ YBIGTA 2019 여름방학 프로젝트
 
 
 ### 08/17
-- # YBIGTA 중간 발표 코멘트
+- ##### YBIGTA 중간 발표 코멘트
 - 불균형 수치 조정해봐라
 	* 불균형한거 처리 안 하면 성능이 안 좋게 나올 수 있다
 	* oversampling / undersampling
