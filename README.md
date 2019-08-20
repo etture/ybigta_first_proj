@@ -28,7 +28,7 @@ YBIGTA 2019 여름방학 프로젝트
 ### 최종발표까지
 - SMOTE 로 oversampling 해보기 (민태)
 - Column 줄여야 할 것 같다 (진우, 준형)
-- F1 Score 확인하는 코드 (진우)
+- XX F1 Score 확인하는 코드 (진우) XX (필요없어짐, 공지방 )
 - RFECV (민태)
 	--> 1, 2번 둘다 해서 XGBoost 적용까지
 - LightGBM / CatBoost (진우)
